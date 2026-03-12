@@ -1,7 +1,7 @@
 # Build stage - use Chainguard Go builder
 # To update versions: chainctl images list --repo go --output table
 ARG REGISTRY=cgr.dev/vectara.com
-FROM ${REGISTRY}/go:1.25.5 AS builder
+FROM ${REGISTRY}/go:1.25 AS builder
 
 WORKDIR /workspace
 
